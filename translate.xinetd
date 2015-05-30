@@ -1,0 +1,11 @@
+# default: on
+# description: The English to Hindi translation server
+service translate
+{
+	flags		= REUSE
+	socket_type	= stream        
+	wait		= no
+	user		= nobody
+	server		= project/Assignment_WordTranslationTool/translate
+	disable		= no
+}

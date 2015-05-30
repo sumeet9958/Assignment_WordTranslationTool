@@ -1,0 +1,24 @@
+
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: calc_ui:24
+msgid "Enter the word to be translated:"
+msgstr "अनुवाद करने के लिए शब्द दर्ज करें:"
+
+#: calc_ui:28
+msgid "The translated word is :"
+msgstr "अनुवादित शब्द है:"
+
+#: calc_ui:28 calc_ui:31
+msgid "Continue?"
+msgstr "जारी रखें?"
+
+#: calc_ui:31
+msgid "Error:"
+msgstr "ग़लती :"

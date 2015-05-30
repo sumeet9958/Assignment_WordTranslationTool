@@ -1,0 +1,14 @@
+#!/bin/sh
+
+FILE=/tmp/translate-$$
+
+curl "http://semes-olla.rhcloud.com/words?Swadesh/English.py"
+
+echo "Enter the no of the word to be translated:"
+read word 
+curl "http://semes-olla.rhcloud.com/word?$word&Swadesh/Hindi.py" 
+
+echo "\n" 
+
+exit 
+
