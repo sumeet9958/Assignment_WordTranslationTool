@@ -8,11 +8,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: calc_ui:24
-msgid "Enter the word to be translated:"
+msgid "Enter the number of the word to be translated:"
 msgstr "अनुवाद करने के लिए शब्द दर्ज करें:"
 
 #: calc_ui:28
-msgid "The translated word is :"
+msgid "Translated word in Hindi is :"
 msgstr "अनुवादित शब्द है:"
 
 #: calc_ui:28 calc_ui:31

@@ -6,6 +6,6 @@ service translate
 	socket_type	= stream        
 	wait		= no
 	user		= nobody
-	server		= project/Assignment_WordTranslationTool/translate
+	server		= Assignment/Assignment_WordTranslationTool/translate
 	disable		= no
 }
