@@ -9,16 +9,16 @@ msgstr ""
 
 #: calc_ui:24
 msgid "Enter the number of the word to be translated:"
-msgstr "अनुवाद करने के लिए शब्द दर्ज करें:"
+msgstr "अनुवादित करण्याची शब्द संख्या प्रविष्ट करा:"
 
 #: calc_ui:28
-msgid "Translated word in Hindi is :"
-msgstr "अनुवादित शब्द है:"
+msgid "Translated word in Marathi is :"
+msgstr "मराठी भाषांतरित शब्द आहे :"
 
 #: calc_ui:28 calc_ui:31
 msgid "Continue?"
-msgstr "जारी रखें?"
+msgstr "पुन्हा सुरू करणे?"
 
 #: calc_ui:31
 msgid "Error:"
-msgstr "ग़लती :"
+msgstr "चूक:"
