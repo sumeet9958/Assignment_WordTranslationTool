@@ -1,5 +1,5 @@
 # Assignment_WordTranslationTool
-Development of a word translation tool
+Development of a word translation tool from English to Marathi
 
 Stages -
 
