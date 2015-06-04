@@ -6,6 +6,6 @@ service translate
 	socket_type	= stream        
 	wait		= no
 	user		= nobody
-	server		= Assignment/Assignment_WordTranslationTool/translate
+	server		= /usr/local/bin/translate
 	disable		= no
 }
