@@ -16,3 +16,5 @@ GUI up and running!
 Localisation feature enabled, Marathi language prompts with Hindi locale (both Devanagari scripts)
 
 Networked application
+
+Bugfixes - Fixed a newline character in translate, In translate_ui fixed TUI crashing when input box has `cat var` appended to it, changed the window sizes to default 0 0 for the default selection of window sizes
