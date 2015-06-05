@@ -13,7 +13,6 @@ GETTEXT="gettext -d translate_ui"
 
 curl -s "http://semes-olla.rhcloud.com/words?Swadesh/English.py" | paste - - - - - - > $FILERT
 
-
 if [ -r ~/.translate.conf ]
 then
 	. ~/.translate.conf
@@ -60,16 +59,21 @@ fi
 
 while true
 do
-	$DIALOG --inputbox "`cat $FILERT`\\n\\n`$GETTEXT \"Enter the number of the word to be translated:\"`" 8 35 2> $FILE1 || end
+	if [ $DIALOG = 'dialog' ] 
+	then
+	$DIALOG --inputbox "\\n\\n`$GETTEXT \"Enter the number of the word to be translated:\"`" 0 0 2> $FILE1 || end
+	else
+	$DIALOG --inputbox "`cat $FILERT`\\n\\n`$GETTEXT \"Enter the number of the word to be translated:\"`" 0 0 2> $FILE1 || end
+	fi	
 	curl -s "http://semes-olla.rhcloud.com/word?`cat $FILE1`&Swadesh/Indo-Arian/Marathi.py" > $FILE2
 	if [ -s $FILE2 ]
 	then
 		MSG="`$GETTEXT \"Translated word in Marathi is:\"` `cat $FILE2`\\n\\n`$GETTEXT \"Continue?\"`"
-	        $DIALOG --yesno "$MSG" 7 20 || end
+	        $DIALOG --yesno "$MSG" 0 0 || end
 	else
 	   
 		MSG="`$GETTEXT \"Error:\"`\\n\\n`cat $ERROR`\\n\\n`$GETTEXT \"Continue?\"`"
-		$DIALOG --yesno "$MSG" 10 35 || end
+		$DIALOG --yesno "$MSG" 0 0 || end
 		
 	fi
 done
